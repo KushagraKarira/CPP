@@ -4,7 +4,7 @@
 // >> I'd love to do another project like this in the future. It was a fun assemblying the functions and see it work as a whole
 // >> IDE used : Atom and gedit
 // >> Compiler Turbo C
-// >> Published on github @
+// >> Published on github @ https://github.com/KushagraKarira/CPP/blob/master/MyProject.cpp
 //****************************************************************
 //****************************************************************
 //                   HEADER FILE USED IN PROJECT
