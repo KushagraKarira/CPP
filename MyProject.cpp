@@ -1,15 +1,6 @@
-//****************************************************************
-// >> Created by Kushagra Karira
-// >> Thanks to geeksforgeets.org, w3schools.com, my friend Bahlah Shah our teacher Mr. Raghvendra Sharma
-// >> I'd love to do another project like this in the future. It was a fun assemblying the functions and see it work as a whole
-// >> IDE used : Atom and gedit
-// >> Compiler Turbo C
-// >> Published on github @ https://github.com/KushagraKarira/CPP/blob/master/MyProject.cpp
-//****************************************************************
-//****************************************************************
-//                   HEADER FILE USED IN PROJECT
-//****************************************************************
+/*----------------------------  Library Managment System --------------------*/
 
+/* HEADER FILE USED IN PROJECT */
 #include<fstream.h>
 #include<conio.h>
 #include<stdio.h>
@@ -17,7 +8,23 @@
 #include<string.h>
 #include<iomanip.h>
 
-// Class begin >>
+/*Function declaration*/
+void write_book(); //Write to book
+void write_student(); //Write to student 
+void display_spb(char n[]); //Display book
+void display_sps(char n[]); //Display student
+void modify_book(); //Modify book record
+void modify_student(); //Modify student record
+void delete_student(); //Delete Student
+void delete_book(); //Delete book 
+void display_alls(); //Display all students
+void display_allb(); //Display all books
+void book_issue(); //Issue book
+void book_deposit(); //Deposit and fine
+void admin_menu(); //Administrator menu
+void intro(); // intro
+
+/* Class defination */
 
 class book
 {
@@ -67,8 +74,8 @@ class book
 };         //book end
 
 
-// class student begin >>
-
+// class student
+ }
 class student
 {
 	char admno[6];
@@ -138,16 +145,43 @@ public:
 };         //class stud end
 
 
-
-// Object initialize
+/* Object initialize */
 
 fstream fp,fp1;
 book bk;
 student st;
 
+/*------ MAIN FUNCTION --------*/
+void main()
+{
+	char ch;
+	intro();
+	do
+	{
+		clrscr();
+		cout<<"\n\n\n\tMAIN MENU";
+		cout<<"\n\n\t01. BOOK ISSUE";
+		cout<<"\n\n\t02. BOOK DEPOSIT";
+	  	cout<<"\n\n\t03. ADMINISTRATOR MENU";
+	  	cout<<"\n\n\t04. EXIT";
+	  	cout<<"\n\n\tPlease Select Your Option (1-4) ";
+	  	ch=getche();
+	  	switch(ch)
+	  	{
+			case '1':clrscr();
+				 book_issue();
+			   	 break;
+		  	case '2':book_deposit();
+			    	 break;
+		  	case '3':admin_menu();
+				 break;
+		  	case '4':exit(0);
+		  	default :cout<<"\a";
+		}
+    	}while(ch!='4');
+}
 
-// book.dat write
-
+/* Function Definitions */
 void write_book()
 {
 	char ch;
@@ -163,8 +197,6 @@ void write_book()
 	fp.close();
 }
 
-// stud.dat write
-
 void write_student()
 {
 	char ch;
@@ -178,10 +210,6 @@ void write_student()
 	}while(ch=='y'||ch=='Y');
 	fp.close();
 }
-
-
-
-// read 
 
 void display_spb(char n[])
 {
@@ -223,10 +251,6 @@ void display_sps(char n[])
  	getch();
 }
 
-
-// modify
-
-
 void modify_book()
 {
 	char n[6];
@@ -257,7 +281,6 @@ void modify_book()
     	getch();
 }
 
-
 void modify_student()
 {
 	char n[6];
@@ -287,9 +310,6 @@ void modify_student()
 		cout<<"\n\n Record Not Found ";
 	getch();
 }
-
- 
-// Delete 
  
 void delete_student()
 {
@@ -321,7 +341,6 @@ void delete_student()
      		cout<<"\n\nRecord not found";
     	getch();
 }
-
 
 void delete_book()
 {
@@ -593,42 +612,6 @@ void admin_menu()
    	}
    	admin_menu();
 }
-
-
-//***************************************************************
-//    	Main...
-//****************************************************************
-
-
-void main()
-{
-	char ch;
-	intro();
-	do
-	{
-		clrscr();
-		cout<<"\n\n\n\tMAIN MENU";
-		cout<<"\n\n\t01. BOOK ISSUE";
-		cout<<"\n\n\t02. BOOK DEPOSIT";
-	  	cout<<"\n\n\t03. ADMINISTRATOR MENU";
-	  	cout<<"\n\n\t04. EXIT";
-	  	cout<<"\n\n\tPlease Select Your Option (1-4) ";
-	  	ch=getche();
-	  	switch(ch)
-	  	{
-			case '1':clrscr();
-				 book_issue();
-			   	 break;
-		  	case '2':book_deposit();
-			    	 break;
-		  	case '3':admin_menu();
-				 break;
-		  	case '4':exit(0);
-		  	default :cout<<"\a";
-		}
-    	}while(ch!='4');
-}
-
 //***************************************************************
 //    			Thank You for reading
 //***************************************************************
