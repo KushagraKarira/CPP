@@ -3,6 +3,9 @@
 Work In Progress :
 1.Delete Unused File Pointers
 2.Move Functions out of class
+
+Note :
+Changed to strecture, for debugging.
 */
 /* HEADER FILE USED IN PROJECT */
 #include<fstream.h>
