@@ -1,0 +1,93 @@
+SQL ( Sequential Query Language )
+
+1. Consider the following tables EMPLOYEES and EMPSALARY.
+Write SQL commands for the statements(i) to (iv) and give outputs for SQL queries (v) to (viii).
+--------------------------------------------------------------------
+Table1 : Books
+
+Bookid BookName       AuthorName      Publisher   Price Type     Qty
+
+C0001  Fast Cook      Lata Kapoor     EPB         355   Cookery  5
+F0001  The Tears      William Hopkins First Publ  650   Fiction  20
+T0001  My First C++   Brain & Brooke  EPB         350   Text     10
+T0002  C++ Brainworks A.W. Rossaine   TDH         350   Text     15
+F0002  Thunderbolts   Anna Roberts    First publ. 750   Fiction  50
+---------------------------------------------------------------------
+Table2 : Issued
+
+Bookid QtyIssued
+
+T0001   4
+C0001   5
+F0001   2
+----------------------------------------------------------------------
+
+(i) To display Book name, author name and price of First publishers books.
+Sol.: SELECT BookNmae, AuthorName,Price from Books where Publisher="First Publ";
+
+(ii) To display the names and price of books in ascending order of their price.
+Sol.:SELECT BookName, Price FROM Books ORDER BY Price;
+
+(iii) To display bookid, bookname, type & qtyissued
+Sol.: SELECT Book.Bookid, BookName, Type, QtyIssued from Books, Isssued Where Books.Bookid=Issued.Bookid;
+
+(iv) To increase the price of all books of EPB publishers by 50.
+Sol.: UPDATE Books SET Price= Price + 50 WHERE Publisher = "EPB";
+
+(v) SELECT Count(*) FROM Books;
+Sol.: 5
+
+(vi) SELECT BookName , AuthorName FROM Books WHERE Publisher = "EPB";
+Sol.:Fast Cook     Lata Kapoor
+     My First C++  Brain & Brooke
+
+(vii) SELECT COUNT(DISTINCT Publishers ) FROM Books WHERE Price>=400;
+Sol.: 1
+
+(viii) SELECT MAX(Price) From Books WHERE Qty > 15;
+Sol.: 750
+
+-------------------------------------------------------------------------------------------
+2. Consider the table Worker given below Write commands in MySql for (i) to (iv) and output for (v) to (vii) :
+
+Table3 : Worker
+ECODE NAME        DESIG      PLEVEL DOJ        DOB
+
+11    RadheShyam  Supervisor P001   13-09-2004 23-03-1981
+12    ChanderNath Operator   P003   22-02-2010 12-07-1987
+13    Fizza       Operator   P003   14-06-2009 14-10-1983
+15    AmeenAhmed  Mechanic   P002   21-08-2006 12-03-1984
+18    Sanya       Clerk      P002   19-12-2005 09-06-1983
+
+(i) To display the details of all WORKERs in descending order of DOB.
+Sol.: SELECT * FROM WORKER ORDER BY DOB DESC;
+
+(ii) To display NAME and DESIG of those WORKERs, whose PLEVEL is either P001 or P002.
+Sol.: SELECT NAME, DESIG FROM WORKER WHERE PLEVEL = ‘P001’ OR PLEVEL = ‘P002’;
+
+(iii) To display the content of all the WORKERs table, whose DOB is in between '19-JAN-1984'
+and '18-JAN-1987'.
+Sol.: SELECT * FROM WORKER WHERE DOB>=’1984-01-19’ AND DOB<=’1987-01-18;
+
+(iv) To add a new row with the following:
+
+19, 'Daya Kishore', 'Operator', 'P003', '19-Jun-2008', '11-Jun-1984'
+
+Sol.: INSERT INTO WORKER VALUES (19, 'Daya Kishore', 'Operator', 'P003', '2008-06-19', '1984-6-11');
+
+(v) SELECT COUNT (PLEVEL), PLEVEL FROM WORKER GROUP BY PLEVEL;
+Sol.: COUNT (PLEVEL) PLEVEL
+1 P001
+2 P003
+3 P002
+
+(vi) SELECT MAX (DOB), MIN (DOJ) FROM WORKER;
+Sol.: MAX (DOB)   MIN (DOJ)
+      1987-07-12  2004-09-13
+
+(vii) SELECT DISTINCT DESIG FROM WROKER.
+Sol.: DISTINCT DESIG
+      Supervisor
+      Operator
+      Mechanic
+      Clerk
