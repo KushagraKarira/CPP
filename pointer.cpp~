@@ -30,6 +30,17 @@ cout<<str;
 
 getch();
 }
+Output : 
+
+Enter the string : rahul_verma1993@yahoo.com
+
+The string length => 25
+
+The reverse string is : moc.oohay@3991amrev_luhar
+
+
+
+
 
 
 

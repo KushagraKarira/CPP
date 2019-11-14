@@ -1,0 +1,156 @@
+size	1. Bubble Sort.cpp	4;"	d	file:
+arr	1. Bubble Sort.cpp	/^int arr[size];$/;"	v
+swap	1. Bubble Sort.cpp	/^void swap(int&a,int&b)$/;"	f
+bubbleSort	1. Bubble Sort.cpp	/^void bubbleSort()$/;"	f
+print	1. Bubble Sort.cpp	/^void print(int arr[], int size)$/;"	f
+main	1. Bubble Sort.cpp	/^int main()$/;"	f
+complex	12. Math.h .cpp	/^struct complex {$/;"	s	file:
+i	12. Math.h .cpp	/^		 int i,r;$/;"	m	struct:complex	file:
+r	12. Math.h .cpp	/^		 int i,r;$/;"	m	struct:complex	file:
+x	12. Math.h .cpp	/^	              }x,y;$/;"	v	typeref:struct:complex
+y	12. Math.h .cpp	/^	              }x,y;$/;"	v	typeref:struct:complex
+add	12. Math.h .cpp	/^void add(complex a, complex b)$/;"	f
+subtract	12. Math.h .cpp	/^void subtract(complex a,complex b)$/;"	f
+multiply	12. Math.h .cpp	/^void multiply(complex a, complex b)$/;"	f
+divide	12. Math.h .cpp	/^void divide(complex a,complex b)$/;"	f
+main	12. Math.h .cpp	/^void main()$/;"	f
+student	13. Inheritance.cpp	/^class student: public person$/;"	c	file:
+Tmarks	13. Inheritance.cpp	/^  { float Tmarks;$/;"	m	class:student	file:
+rollno	13. Inheritance.cpp	/^    int rollno;$/;"	m	class:student	file:
+calgrade	13. Inheritance.cpp	/^    char calgrade()$/;"	f	class:student
+enter	13. Inheritance.cpp	/^    void enter()$/;"	f	class:student
+display	13. Inheritance.cpp	/^    void display()$/;"	f	class:student
+main	13. Inheritance.cpp	/^void main()$/;"	f
+node	14. Linked Queue.cpp	/^ struct node {$/;"	s	file:
+roll	14. Linked Queue.cpp	/^ int roll;$/;"	m	struct:node	file:
+next	14. Linked Queue.cpp	/^	      	 node* next;$/;"	m	struct:node	file:
+front	14. Linked Queue.cpp	/^	      }*front,*rear,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+rear	14. Linked Queue.cpp	/^	      }*front,*rear,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+ptr	14. Linked Queue.cpp	/^	      }*front,*rear,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+newptr	14. Linked Queue.cpp	/^	      }*front,*rear,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+np	14. Linked Queue.cpp	/^	      }*front,*rear,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+create	14. Linked Queue.cpp	/^ node *create(int a)$/;"	f
+insert	14. Linked Queue.cpp	/^ void insert(node *np)$/;"	f
+delet	14. Linked Queue.cpp	/^ void delet()$/;"	f
+display	14. Linked Queue.cpp	/^ void display(node *np)$/;"	f
+main	14. Linked Queue.cpp	/^ void main()$/;"	f
+node	15. Linked Stack.cpp	/^struct node {$/;"	s	file:
+roll	15. Linked Stack.cpp	/^	     	 int roll;$/;"	m	struct:node	file:
+next	15. Linked Stack.cpp	/^	      	node* next;$/;"	m	struct:node	file:
+top	15. Linked Stack.cpp	/^	      }*top,*save,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+save	15. Linked Stack.cpp	/^	      }*top,*save,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+ptr	15. Linked Stack.cpp	/^	      }*top,*save,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+newptr	15. Linked Stack.cpp	/^	      }*top,*save,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+np	15. Linked Stack.cpp	/^	      }*top,*save,*ptr,*newptr,*np;$/;"	v	typeref:struct:node
+create	15. Linked Stack.cpp	/^node *create(int a)$/;"	f
+push	15. Linked Stack.cpp	/^void push(node *np)$/;"	f
+pop	15. Linked Stack.cpp	/^void pop()$/;"	f
+display	15. Linked Stack.cpp	/^void display(node *np)$/;"	f
+main	15. Linked Stack.cpp	/^void main()$/;"	f
+person	16. Multiple inheritance.cpp	/^class person{ char name[21];$/;"	c	file:
+name	16. Multiple inheritance.cpp	/^class person{ char name[21];$/;"	m	class:person	file:
+age	16. Multiple inheritance.cpp	/^int age;$/;"	m	class:person	file:
+indata	16. Multiple inheritance.cpp	/^	 void indata()$/;"	f	class:person
+outdata	16. Multiple inheritance.cpp	/^	 void outdata();$/;"	p	class:person	file:
+outdata	16. Multiple inheritance.cpp	/^void person::outdata()$/;"	f	class:person
+game	16. Multiple inheritance.cpp	/^ class game {$/;"	c	file:
+game_name	16. Multiple inheritance.cpp	/^	     char game_name[20];$/;"	m	class:game	file:
+input	16. Multiple inheritance.cpp	/^	     void input()$/;"	f	class:game
+output	16. Multiple inheritance.cpp	/^	     void output()$/;"	f	class:game
+student	16. Multiple inheritance.cpp	/^class student: public person, public game$/;"	c	file:
+Tmarks	16. Multiple inheritance.cpp	/^  { float Tmarks;$/;"	m	class:student	file:
+rollno	16. Multiple inheritance.cpp	/^    int rollno;$/;"	m	class:student	file:
+calgrade	16. Multiple inheritance.cpp	/^    char calgrade()$/;"	f	class:student
+enter	16. Multiple inheritance.cpp	/^    void enter()$/;"	f	class:student
+display	16. Multiple inheritance.cpp	/^    void display()$/;"	f	class:student
+main	16. Multiple inheritance.cpp	/^void main()$/;"	f
+node	17. Linked List.cpp	/^struct node  {$/;"	s	file:
+info	17. Linked List.cpp	/^		int info;$/;"	m	struct:node	file:
+next	17. Linked List.cpp	/^		node*next;$/;"	m	struct:node	file:
+rear	17. Linked List.cpp	/^	       }*rear,*start,*newptr,*save,*ptr;$/;"	v	typeref:struct:node
+start	17. Linked List.cpp	/^	       }*rear,*start,*newptr,*save,*ptr;$/;"	v	typeref:struct:node
+newptr	17. Linked List.cpp	/^	       }*rear,*start,*newptr,*save,*ptr;$/;"	v	typeref:struct:node
+save	17. Linked List.cpp	/^	       }*rear,*start,*newptr,*save,*ptr;$/;"	v	typeref:struct:node
+ptr	17. Linked List.cpp	/^	       }*rear,*start,*newptr,*save,*ptr;$/;"	v	typeref:struct:node
+delnode	17. Linked List.cpp	/^void delnode()$/;"	f
+insert_beg	17. Linked List.cpp	/^void insert_beg(node*np)$/;"	f
+display	17. Linked List.cpp	/^void display(node*np)$/;"	f
+create_new_node	17. Linked List.cpp	/^node*create_new_node(int n)$/;"	f
+insert_end	17. Linked List.cpp	/^void insert_end(node*np)$/;"	f
+search	17. Linked List.cpp	/^void search(node*np,int a)$/;"	f
+main	17. Linked List.cpp	/^void main()$/;"	f
+i	18. NSC .cpp	/^int i; long p,a[80];$/;"	v
+p	18. NSC .cpp	/^int i; long p,a[80];$/;"	v
+a	18. NSC .cpp	/^int i; long p,a[80];$/;"	v
+main	18. NSC .cpp	/^void main()$/;"	f
+decimal_to_binary	18. NSC .cpp	/^void decimal_to_binary(long num)$/;"	f
+binary_to_decimal	18. NSC .cpp	/^void binary_to_decimal(long num)$/;"	f
+decimal_to_octal	18. NSC .cpp	/^void decimal_to_octal(long num)$/;"	f
+octal_to_decimal	18. NSC .cpp	/^void octal_to_decimal(long num)$/;"	f
+decimal_to_hexa	18. NSC .cpp	/^void decimal_to_hexa(long num)$/;"	f
+hexa_to_decimal	18. NSC .cpp	/^void hexa_to_decimal(char b[80])$/;"	f
+calc	19. Overloading.cpp	/^int calc(int a, int b)$/;"	f
+calc	19. Overloading.cpp	/^float calc(float a, float b)$/;"	f
+calc	19. Overloading.cpp	/^float calc(int a, float b)$/;"	f
+calc	19. Overloading.cpp	/^float calc(float a, int b)$/;"	f
+main	19. Overloading.cpp	/^void main()$/;"	f
+main	2. Binary Search.cpp	/^void main()$/;"	f
+binary_search	2. Binary Search.cpp	/^void binary_search(int A[], int n, int p)$/;"	f
+main	20. Pointer.cpp	/^void main()$/;"	f
+pop	21. Stack Array.cpp	/^int pop(int[],int&);$/;"	p	file:
+push	21. Stack Array.cpp	/^int push(int[],int&,int);$/;"	p	file:
+display	21. Stack Array.cpp	/^void display(int[],int);$/;"	p	file:
+size	21. Stack Array.cpp	/^const int size=50;$/;"	v
+main	21. Stack Array.cpp	/^void main()$/;"	f
+push	21. Stack Array.cpp	/^ int push(int stack[],int &top,int el)$/;"	f
+pop	21. Stack Array.cpp	/^ int pop(int stack[],int &top)$/;"	f
+display	21. Stack Array.cpp	/^ void display(int stack[],int top)$/;"	f
+size	22. Queue Array.cpp	/^const int size=50;$/;"	v
+q	22. Queue Array.cpp	/^int q[size],rear=-1,front=-1;$/;"	v
+rear	22. Queue Array.cpp	/^int q[size],rear=-1,front=-1;$/;"	v
+front	22. Queue Array.cpp	/^int q[size],rear=-1,front=-1;$/;"	v
+insert	22. Queue Array.cpp	/^int insert(int q[],int ele)$/;"	f
+delet	22. Queue Array.cpp	/^int delet(int q[])$/;"	f
+display	22. Queue Array.cpp	/^void display(int q[],int front,int rear)$/;"	f
+main	22. Queue Array.cpp	/^void main()$/;"	f
+main	23. Selection Sort.cpp	/^void main()$/;"	f
+selection_sort	23. Selection Sort.cpp	/^void selection_sort(int A[], int n)$/;"	f
+main	24. D Array.cpp	/^void main()$/;"	f
+swap_using_pointers	25. Swap .cpp	/^void swap_using_pointers(int *, int *);$/;"	p	file:
+main	25. Swap .cpp	/^void main()$/;"	f
+swap_using_pointers	25. Swap .cpp	/^void swap_using_pointers(int *a,int *b)$/;"	f
+main	3. Linear Search.cpp	/^void main()$/;"	f
+linear_search	3. Linear Search.cpp	/^void linear_search(int A[], int n, int p)$/;"	f
+WORKER	4. Binary File.cpp	/^class WORKER { char Wname[20];$/;"	c	file:
+Wname	4. Binary File.cpp	/^class WORKER { char Wname[20];$/;"	m	class:WORKER	file:
+Wno	4. Binary File.cpp	/^	       int Wno;$/;"	m	class:WORKER	file:
+HRWK	4. Binary File.cpp	/^	       int HRWK; \/\/ Hours work$/;"	m	class:WORKER	file:
+wgrate	4. Binary File.cpp	/^	       float wgrate; \/\/ wage rate$/;"	m	class:WORKER	file:
+totwage	4. Binary File.cpp	/^	       float totwage;$/;"	m	class:WORKER	file:
+calcwage	4. Binary File.cpp	/^	       float calcwage (int HRWK, float wgrate)$/;"	f	class:WORKER	file:
+WORKER	4. Binary File.cpp	/^	       WORKER ()$/;"	f	class:WORKER
+INDATA	4. Binary File.cpp	/^	       void INDATA();$/;"	p	class:WORKER	file:
+OUTDATA	4. Binary File.cpp	/^	       void OUTDATA();$/;"	p	class:WORKER	file:
+INDATA	4. Binary File.cpp	/^void WORKER::INDATA ()$/;"	f	class:WORKER
+OUTDATA	4. Binary File.cpp	/^void WORKER :: OUTDATA()$/;"	f	class:WORKER
+main	4. Binary File.cpp	/^void main()$/;"	f
+cel	5. C F Conversion.cpp	/^double cel,far;$/;"	v
+far	5. C F Conversion.cpp	/^double cel,far;$/;"	v
+fibonacci	8. Fibonacci.cpp	/^int fibonacci(int n);$/;"	p	file:
+main	8. Fibonacci.cpp	/^void main()$/;"	f
+first	8. Fibonacci.cpp	/^int first=1;$/;"	v
+second	8. Fibonacci.cpp	/^int second=1;$/;"	v
+third	8. Fibonacci.cpp	/^int third;$/;"	v
+i	8. Fibonacci.cpp	/^int i=2;$/;"	v
+sum	8. Fibonacci.cpp	/^int sum=0;$/;"	v
+fibonacci	8. Fibonacci.cpp	/^int fibonacci(int n)$/;"	f
+sports	9. File Handling.cpp	/^struct sports {$/;"	s	file:
+event	9. File Handling.cpp	/^		 char event[20];$/;"	m	struct:sports	file:
+participants	9. File Handling.cpp	/^		 char participants[10][30];$/;"	m	struct:sports	file:
+no_of_participants	9. File Handling.cpp	/^		 int no_of_participants;$/;"	m	struct:sports	file:
+s	9. File Handling.cpp	/^	      } s[20], s2[20];$/;"	v	typeref:struct:sports
+s2	9. File Handling.cpp	/^	      } s[20], s2[20];$/;"	v	typeref:struct:sports
+copy	9. File Handling.cpp	/^void copy(fstream &ob);$/;"	p	file:
+i	9. File Handling.cpp	/^int i=0;$/;"	v
+main	9. File Handling.cpp	/^void main()$/;"	f
+copy	9. File Handling.cpp	/^void copy(fstream &o)$/;"	f
